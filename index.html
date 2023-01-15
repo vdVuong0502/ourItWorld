@@ -6,10 +6,1392 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our IT World</title>
+    <link rel="stylesheet" href="index.css">
+
 </head>
 
 <body>
-
+    <div class="header">
+        <a href="#default" class="logo">
+            <img src="image001.gif" alt="RMIT Logo">
+        </a>
+    
+        <div class="header-middle">
+            <div>Assessment 2: Our IT World</div>
+            <div>Project: Traffic Control System with AI</div>
+        </div>
+    
+        <div class="header-right">
+            <p class="active">Lecturer: Nguyen Minh Long</p>
+            <p>Tutor: Bao Ho Nguyen Phu</p>
+        </div>
+    </div>
+    
+    <div class="cover-intro">COSC2083 – Introduction to IT</div>
+    <div class="cover-intro">Group 7</div>
+    <div class="cover-intro member">s3878281 - Vuong Viet Dung</div>
+    <div class="cover-intro member">s3975979 - Pham Phuoc Sang</div>
+    <div class="cover-intro member">s3963294 - Hyeonseok Kang</div>
+    <div class="cover-intro">We declare that in submitting all work for this assessment, we have read, understood, and
+        agreed to the content and expectations of the Assessment Declaration.</div>
+    <hr>
+    
+    <div id="toc_container">
+        <p class="toc_title">Contents</p>
+        <ul class="toc_list">
+            <li><a href="#Team_Profile">A. Team profile</a></li>
+            <li><a href="#Tools">B. Tools</a></li>
+    
+            <li><a href="#Project_Description">C. Project Description</a>
+                <ul>
+                    <li><a href="#Overview">I. Overview</a></li>
+                    <li><a href="#Detail_Description">II. Detail Desciption</a>
+                        <ul>
+                            <li><a href="#Aim">1. Aim</a></li>
+                            <li><a href="#Plans">2. Plans and progress</a></li>
+                            <li><a href="#Roles">3. Roles</a></li>
+                            <li><a href="#Scope_Limits">4. Scope and Limits</a></li>
+                            <li><a href="#Technologies">5. Tools and Technologies</a></li>
+                            <li><a href="#Testing">6. Testing</a></li>
+                            <li><a href="#Risks">7. Risks</a></li>
+                            <li><a href="#Communication">8. Communication and group process</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#Skills">D. Skills and Jobs</a></li>
+            <li><a href="#Prototype">E. Project outcomes/Prototype</a></li>
+            <li><a href="#Reflections">F. Group Reflection</a></li>
+            <li><a href="#References">G. References</a></li>
+    
+        </ul>
+    </div>
+    <hr>
+    <hr>
+    <div class="content">
+        <h3 id="Team_Profile">
+            <strong class="section-headers">A.</strong>
+            <strong class="section-headers">Team Profile</strong>
+        </h3>
+        <p>
+            <strong>Team name:</strong>
+            Group 7.
+        </p>
+        <p>
+            Member’s information:
+        </p>
+        <p>
+            <strong>Pham Phuoc Sang (s3975979@rmit.edu.vn):</strong>
+        </p>
+        <ul>
+            <li>
+                <p>
+                    <strong>Skills:</strong>
+                    Problem-solving, Time management, Competent in data structures and
+                    algorithms, Good at solving linear algebra. Have a basic understanding of
+                    machine learning &amp; neural network and deep learning, Proficient in
+                    Python.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>Hobbies:</strong>
+                    I spend most of my free time learning about AI, machine learning, and deep
+                    learning by reading books and discussing them at some forums. I also work
+                    on my algorithmic thinking and coding skills while learning about data
+                    structures and algorithms.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>IT interset, experience:</strong>
+                    I have been interested in AI since I was in secondary school, and I spent a
+                    lot of time learning about AI applications, how AI works, and the
+                    algorithms behind it. Also, i did some small projects that I created on my
+                    own, such as face detection, object detection, a simple neural network, and
+                    virtual assistance.
+                </p>
+            </li>
+        </ul>
+    
+        <p>
+            <strong>Vuong Viet Dung (s3878281@rmit.edu.vn):</strong>
+        </p>
+        <ul>
+            <li>
+                <p>
+                    <strong>Skills:</strong>
+                    experienced using Git. Programming languages: Python, C++, Java,
+                    JavaScript. Writing documentations. Worked in many groups on different
+                    projects before, therefore, I have solid team-working skills and
+                    problem-solving skills.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>Hobbies:</strong>
+                    Although I have learned a lot of programming languages and software
+                    engineering principles, I’ve always loved working with systems and
+                    networks.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>IT interset, experience:</strong>
+                    I worked in a team that make a machine learning-based project before.
+                    Moreover, I’ve learned the tools and languages that may be needed for this
+                    project. However, I’m more interested in constructing networks and
+                    programming hardware components.
+                </p>
+            </li>
+        </ul>
+        <p>
+            <strong> Kang HyeonSeok (s3963294@rmit.edu.vn):</strong>
+        </p>
+        <ul>
+            <li>
+                <p>
+                    <strong>Skills:</strong>
+                    MySQL, Database designing, Web programming, Git. Researching, report
+                    writing. Have adequate knowledge of Python. Time management and
+                    team-working skills.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>Hobbies:</strong>
+                    I spent a lot of time learning new programming languages such as java and
+                    javascript and also I like to watch programming videos.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>IT interset, experience:</strong>
+                    I have experience of java languages from other courses and I have also
+                    worked on java from online lectures before I entered RMIT University.
+                </p>
+            </li>
+        </ul>
+        <p>
+            <strong> </strong>
+        </p>
+        <h3>
+            <strong>Group processes:</strong>
+        </h3>
+        <ul>
+            <li>
+                <p>
+                    Despite the fact that one of the members of the group decided to withdraw
+                    from this class, the process of the project ran successfully. However, this
+                    shouldn't even cause a blip in the progress of our project at all. Every
+                    member of the team is responsible for each part of the project, and at the
+                    end of each day, we discuss what we've accomplished and make plans for the
+                    next day. As a result, the growth of our group will always remain on track.
+                    By understanding each member’s strengths and weaknesses, they are
+                    distributed into which parts and tasks are suitable the most for them. That
+                    is the reason why our team operated like a well-oiled machine.
+                </p>
+            </li>
+    
+        </ul>
+    
+        <p>
+            <strong>Career plans:</strong>
+            Dung wants to become a penetration tester, while Sang and Kang intend to
+            pursue a master's degree. Sang desires a post-graduation job as an AI
+            researcher or AI application developer, while Kang has not yet made a
+            decision. Each member's desired employment is connected to the information
+            technology (IT) area. However, they are still distinct from one another.
+            Dung's mission is to assist the company in identifying as many
+            vulnerabilities as possible, thereby eliminating the risk of future
+            assaults by repairing them. Sang's job requires him to do more research and
+            work with algorithms in the area of artificial intelligence (AI) or the use
+            of AI in real-world applications like virtual support or autonomous
+            driving. Kang is willing to get a master's degree to fulfill his
+            professional responsibilities or to transmit his expertise to future
+            generations.
+        </p>
+    
+    
+        <h3 id="Tools">
+            <strong class="section-headers">B.</strong>
+            <strong class="section-headers">Tools</strong>
+        </h3>
+        <p>
+            To build the UI prototype we used photoshop.
+        </p>
+        <p>
+            We also use HTML, CSS, JavaScript to create our website, which can be view
+            at: https://vdvuong0502.github.io/ourItWorld/
+        </p>
+        <p>
+            Or view code at GitHub link:
+            https://github.com/vdVuong0502/ourItWorld
+        </p>
+    
+        <h3 id="Project_Description">
+            <strong class="section-headers">C.</strong>
+            <strong class="section-headers">Project Description</strong>
+        </h3>
+        <ul>
+            <li style="list-style-type: none">
+                <strong id="Overview" style="font-size: 25px">I. Overview</strong>
+            </li>
+        </ul>
+        <ul>
+            <li style="list-style-type: none;">
+                <strong style="font-size: 22px"><em>1. Topic:</em></strong>
+            </li>
+            <li style="list-style-type: none;">
+                <br>
+                <strong><em>- The big picture:</em></strong>
+            </li>
+            <p>
+                ● Traffic Clog is the primary concern of the rapid and growing planet. Due
+                to the growth in the usage of more private automobiles and insufficient
+                road network capacity controlling traffic using the old technique is
+                onerous. Traffic has a significant impact on both pollution and individual
+                productivity. Variable traffic congestion may not be effectively and
+                significantly resolved by the use of conventional procedures. Today,
+                artificial intelligence (AI) and machine learning (ML) play a significant
+                role in the resolution of several real-world issues. Therefore, to handle
+                this challenge, our group come up with the idea that utilising the
+                application of artificial intelligence and machine learning. This can be
+                the vehicle that leads us to the best answers. An AI-enabled traffic
+                management system may provide cars with more freedom by allowing them to be
+                more directed and controlled by their external surroundings. The primary
+                objective of AI is to reduce manual interaction.
+            </p>
+            <p>
+                ● The manual management of traffic congestion has been shown to be both
+                unsuccessful and time-consuming. It is feasible to overcome the
+                shortcomings of the manual technique by using automotive technology and
+                other adaptive technologies. It is hard to provide an exact estimate of the
+                amount of congestion that will be present at a particular place due to the
+                occurrence of unpredictable events. The key challenges associated with
+                anticipating traffic congestion include a lack of capacity, uncontrolled
+                demand, and predetermined times for the length of traffic signals. Thus, we
+                need to maximize the traffic flow at the intersections and minimize the
+                waiting time using AI applications in the systems to identify and manage
+                the flow of traffic easily.
+            </p>
+        </ul>
+    
+        <ul>
+            <li style="list-style-type: none;">
+                <strong style="font-size: 22px"><em>2. Ideal scenario:</em></strong>
+            </li>
+            <p>
+                ● Reduce or eliminate driver-caused automobile accidents:
+            <ul>
+                <li>
+                    <p> Driver mistake is the leading cause of automobile accidents. Humans are too obstinate not to drive
+                        when
+                        distracted, inebriated, high, or tired, therefore it should not come as a surprise. The apparent
+                        answer
+                        to
+                        such unsafe driver behavior is to give the wheel to something incapable of becoming distracted,
+                        inebriated,
+                        high, or sleepy as people do when driving. Consequently, vehicle autonomy is necessary. Self-driving
+                        cars
+                        are outfitted with state-of-the-art cameras, sensors, and radars to assess their surroundings and
+                        other
+                        road
+                        users in order to foresee the unexpected in ways that our limited and inferior senses could never
+                        do.
+                        These
+                        future automobiles and trucks also respond faster to potential dangers. Moreover, vehicle-to-vehicle
+                        connectivity might allow them to instantly share information and notify one another of surrounding
+                        threats.</p>
+                </li>
+            </ul>
+    
+            </p>
+            <p>
+                ● Identifying Risky Pathways:
+            <ul>
+                <li>
+                    <p> Vehicles driven by AI may operate on gasoline or electricity, but they are fuelled by data.
+                        Intelligent automobiles and trucks continuously collect data that, with the application of
+                        appropriate analytics, may provide actionable insights. Transport interests may utilize these
+                        insights to determine which parts of the road are intrinsically hazardous for one reason or another,
+                        allowing them to design safer routes for motorists.</p>
+                </li>
+            </ul>
+    
+            </p>
+        </ul>
+    
+        <ul>
+            <li style="list-style-type: none;">
+                <strong style="font-size: 22px"><em>3. Motivation:</em></strong>
+            </li>
+            <ul>
+                <li style="list-style-type: disc;">
+                    <p> During rush hours, there is a great deal of traffic jams and accidents in HCM City, which causes
+                        transportation challenges for many residents. Due to working hours and finish times, a large number
+                        of residents used transportation at this time. AI-based traffic control systems are the subject of
+                        our discussion. It employs AI to handle traffic control systems. The traffic, people, roads, and
+                        timings of the transportation network can all be correctly anticipated and managed by artificial
+                        intelligence. In addition, AI provides the most efficient means of transportation, hence enhancing
+                        customer service. We were encouraged to tackle this topic because we have expertise with traffic,
+                        and we want to build AI solutions that will assist the inhabitants of HCM City in finding a solution
+                        to the traffic problem and reducing the number of accidents. </p>
+                </li>
+                <li style="list-style-type: disc;">
+                    <p> Artificial intelligence (AI) is progressing at an accelerating rate. Currently, new technical
+                        applications and systems are employed to imitate, extend, and increase human intellect. With the
+                        continuous advancement of AI technology and the expanding simulation of the human mind and mental
+                        information processes, AI has garnered ever-increasing interest in a variety of industries,
+                        including transportation. </p>
+                </li>
+    
+    
+    
+    
+            </ul>
+            <p>
+                - <strong>Competitors and differences:</strong>
+            </p>
+            <ul>
+                <li style="list-style-type: none;">
+                    <p>
+                        ● There are several contenders for AI applications in traffic management at
+                        now. Such as autonomous cars, intelligent traffic signals, traffic flow
+                        analysis, intelligent traffic management and monitoring systems, artificial
+                        intelligence (AI) cameras, intelligent parking, and driver monitoring. Our
+                        efforts are similar; we integrate the majority of them to produce AI-based
+                        traffic management with two subsystems:
+                    </p>
+                    <ul>
+                        <li style="list-style-type: none;">
+                            <p>
+                                ▪ The traffic control system which includes the transportation controllers
+                                attached to the vehicles and the traffic lights controllers. Using
+                                intelligent cameras, driver monitoring, and self-driving vehicles allows
+                                communication between vehicles and systems hand in hand.
+                            </p>
+                        </li>
+                        <li style="list-style-type: none;">
+                            <p>
+                                ▪ Command control system. Utilizing intelligent traffic management and monitoring systems to
+                                control traffic flow and enable vehicle communication.
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+    
+            <p>However, this is still the concept behind our project. We are unable to compete against all of our
+                competitors owing to a lack of human resources and infrastructure, as well as finances, and all of these
+                things are compounded by the fact that we have a restricted amount of knowledge.</p>
+            </p>
+        </ul>
+        <ul>
+            <li style="list-style-type: none">
+                <strong id="Detail_Description" style="font-size: 25px">II. Detail Description</strong>
+            </li>
+        </ul>
+        <ul>
+            <li style="list-style-type: none;">
+                <strong id="Aim" style="font-size: 22px"><em>1. Aim</em></strong>
+            </li>
+    
+        </ul>
+        <p>
+            We aim to create a traffic control system that uses AI technology to reduce
+            traffic jams and car accidents. Our AI Traffic control system will analyze
+            various real-life factors such as population, road conditions, time, etc.
+            and make predictions to allow the most optimal flow of traffic in any given
+            condition.
+        </p>
+        <p>
+            We will make this work with the following functions:
+        </p>
+        <ul>
+            <li style="list-style-type: none;">
+                <p>
+                    ● Observational: Observe the current road condition, such as traffic,
+                    weather condition, and time of day. This will be done by retrieving
+                    available online data, some personal data necessary such as current
+                    location, and camera real-time images to process and detect the number of
+                    vehicles per amount of time. will be retrieved through the user’s phone or
+                    computer’s built-in sensors/trackers.
+                </p>
+            </li>
+            <li style="list-style-type: none;">
+                <p>
+                    ● Analytical: Use the data obtained through the observational functions to
+                    analyze and create a decision and prediction to give the user the best
+                    option while on the road, change the light signal at the appropriate time
+                    of the day, and demonstrate the data in chart format.
+                </p>
+            </li>
+            <li style="list-style-type: none;">
+                <p>
+                    ● Announcement: Announce the decision the program makes to the drivers when
+                    they change to assistant mode, through on-screen or sound notification.
+                </p>
+            </li>
+    
+        </ul>
+    
+        <ul>
+            <li style="list-style-type: none;">
+                <strong id="Plans" style="font-size: 22px"><em>2. Plans and Progress</em></strong>
+            </li>
+    
+        </ul>
+        <p>
+            Having been experiencing the horrible traffic in Ho Chi Minh City helped us come up with an idea to bring down
+            the situation. With the rise of machine learning in many industries lately, we thought that we could apply it to
+            analyze the traffic situation and give predictions, and decisions about the traffic lights’ time, and control
+            autonomous cars. The team conducted much research about the applications of AI in this field, what we had
+            already been able to do and what we could do with our knowledge at the time. We spent the first week discussing
+            the scope, and sometimes we argued, but I believed it only made our decision more insightful and accurate.
+            Finally, we could decide what we want our system to do. We wanted to divide the system into 3 main parts:
+        </p>
+        <ul>
+            <li style="list-style-type: none;">
+                <p>
+                    ● The first part will be a subsystem attached to a car to take information about the speed, nearby
+                    objects, and vehicles, and the distance between them. It will combine all this information, make
+                    predictions, and automatically control the car.
+                </p>
+            </li>
+            <li style="list-style-type: none;">
+                <p>
+                    ● As for the second part, we planned to attach cameras at each intersection, use a deep learning
+                    algorithm to detect and study the vehicle flows, then calculate and give the most accurate time.
+                </p>
+            </li>
+            <li style="list-style-type: none;">
+                <p>
+                    ● The third part will be a central control system to monitor each intersection and the data at 2 other
+                    subsystems sent, then it will generate charts and results to demonstrate to the supervisors. We also
+                    want to create a private server for these subsystems to communicate to provide the most precise
+                    conclusions.
+                </p>
+            </li>
+    
+        </ul>
+        <p>
+            We then quickly made a plan in order to bring this idea to life. We agreed that this project is not a small one
+            and there were many things we didn’t know regarding AI, hardware, and network, so we planned to create the
+            prototype of the system and the functions for the first phase. We spent the next week researching and listing
+            down the tools and technologies that might involve. This is a machine learning-based project, so when we thought
+            of the tools the first thing that came to our mind was Python. There are many reasons: it has a powerful math
+            library to help us calculate the predictions; it has a lot of modules that help process machine-learning
+            algorithms; it is greatly supported by the community etc. But the most important reason was we all knew Python
+            beforehand. It would take less effort to learn the language and allow us to focus on researching other
+            technologies and algorithms. After having decided on the language, we started to dig into the libraries we would
+            need for this project. As expected, since the language is highly supported for machine learning, we took no time
+            to list down all the packages and technologies. Those included MySQL (for storing processed data for each
+            intersection and vehicle that were registered); NumPy, Keras, and TensorFlow (for image processing and AI
+            training), and Pandas (for creating data charts). Since we will be coding together, we decided that each member
+            should grasp how to use every tool. We thought it would only take us 2 weeks. However, after the first few days,
+            we realized that each of these tools and technologies might be hard for newcomers, so we made a new arrangement:
+            every member needed to know the basics of all the tools, but each will specialize in different ones. In the end,
+            it took us nearly 3 weeks to be able to learn what we planned.
+        </p>
+        <p>
+            We were behind the schedule, so we decided to split the jobs. One person will design the UI for the command
+            system,
+            one will design the system architecture and the other two will research all the algorithms involving the
+            project,
+            and all must be done in 2 weeks. It was at that moment, we got horrible news, which is that one member of our
+            team
+            decided to withdraw. We were short-staffed, but the project had to go on. We had to learn the left member’s
+            specialized technologies and take up more work. It never rains but it pours, and we hit another wall. More
+            precisely, it was our mistake in the first place, we should have investigated the automatically controlled cars.
+            In
+            order to archive the autonomous state, we need to perform the neural network method in deep learning and use an
+            ADAS
+            (Advanced Driver Assistance System). To do this, the hardware requirements are high. Moreover, ADAS is much
+            beyond
+            our budget and scope. We had to change our scope. All the functions regarding controlling the car and making
+            driving
+            decisions were removed. Thus, the scope became much smaller and more achievable. The system will still contain 3
+            parts:
+        </p>
+    
+        <ul>
+            <li style="list-style-type: none;">
+                <p>
+                    ● The first part will just collect the car’s state such as speed, nearby objects, vehicles, and distance
+                    between them. Receiving response from server and display notifications on the screen
+                </p>
+            </li>
+            <li style="list-style-type: none;">
+                <p>
+                    ● The second part will not have any change.
+                </p>
+            </li>
+            <li style="list-style-type: none;">
+                <p>
+                    ● The third part will have an additional function, which is posting the processed data and charts so
+                    that these data can be used by other applications to update the city traffic news to other people.
+            </li>
+    
+        </ul>
+    
+        <p>
+            Assembling the server is not in the scope so we planned to hire a cloud server to run some machine learning
+            algorithms, respond to other parts and store processed data.
+        </p>
+    
+        <p>
+            Stepping into the world of AI turned out to be much harder than we thought since we do not have the required
+            knowledge in both the IT and machine learning fields. Although we quickly finish the UI design (which contains a
+            main screen with small windows to display the current situation at every intersection. Users can click on a
+            window to zoom in. This UI will contain a menu for users to switch pages to view analyzed data and charts.) and
+            the system architecture (after having modified the scope), we needed nearly a month to read through all the
+            material we found, and finally, we were able to list down some of the most effective algorithms that we can make
+            and suitable components to use. Still, which one to use is the question that we cannot answer when we haven’t
+            really implemented these functions.
+        </p>
+        <p>
+            Having all the information that we needed, we then got our hands on making the first prototype. The trouble in
+            the past made our work more effective this time. We created a prototype, which you can view later in this
+            report, that demonstrates the UI of the command control system and provides the clearest vision of how the whole
+            program will work. After that, we wrote this report with all the project descriptions that we believed not only
+            will be a useful document when explaining the project to people who are not from the field but will also be a
+            reference document for us to make sure the project is still on the right track (or any other team might take up
+            on this project if we are not able to complete it).
+        </p>
+    
+        <ul>
+            <li style="list-style-type: none;">
+                <strong id="Roles" style="font-size: 22px"><em>3. Roles</em></strong>
+            </li>
+            <ul>
+                <li style="list-style-type: none">
+                    <strong>a. The roles:</strong>
+                    <ul>
+                        <p>
+                            After carefully discussing, our team decide there will be 6 main roles involved in this project.
+                        </p>
+                        <p>
+                            <strong>Team Leader: </strong>
+                            The team leader oversees the overall performance, and organization of the
+                            team. He also makes sure team members work well together and are on
+                            schedule to deliver the product.
+                        </p>
+                        <p>
+                            <strong>UI / UX designers: </strong>
+                            Design the user interface of the command control system as well as the
+                            method of displaying processed data to the drivers. Moreover, they are
+                            responsible for ensuring that browsing experience and features are
+                            accessible to users, analyzing the target audience’s behavior.
+                        </p>
+                        <p>
+                            <strong>Software developers: </strong>
+                            Code the software and closely collaborate with other roles to make the
+                            team’s plan a real and working product.
+                        </p>
+                        <p>
+                            <strong>Testers:</strong>
+                            handle the manual job of the testing stage. Testers are directly
+                            responsible for product quality.
+                        </p>
+                        <p>
+                            <strong>Technical Designer:</strong>
+                            Responsible for choosing tools and technological solutions for the whole
+                            development process, establishing relationships among the components in the
+                            system and the roles of each component, updating the system design, and the
+                            process of development, testing, and deployment.
+                        </p>
+                        <p>
+                            <strong>Product Manager:</strong>
+                            Supervises the development process, does research about alike systems and
+                            the market, controls and plans the tasks, makes decisions about the team’s
+                            ideas, responsible for documentation and maintenance.
+                        </p>
+                    </ul>
+                </li>
+    
+                <li style="list-style-type: none">
+                    <strong>b. Who should be which?</strong>
+                    <ul>
+                        <p>
+                            Despite the team structure has been different from when we started, we decided to stick to the
+                            old responsibilities that were assigned to each member in the proposal to decide who will take
+                            which roles if the team cannot recruit more members.
+                        </p>
+                        <p>
+                            <strong>Vuong Viet Dung:</strong>
+                            s3878281@rmit.edu.vn
+                        <ul>
+                            <p>
+                                🡺 Roles: Team leader, lead software developer, tester.
+                            </p>
+    
+                        </ul>
+                        </p>
+    
+                        <p>
+                            <strong>Kang HyeonSeok: </strong>
+                            s3963294@rmit.edu.vn
+                        <ul>
+                            <p>
+                                🡺 Roles: Lead UI/UX designer, software developer, tester
+                            </p>
+    
+                        </ul>
+                        </p>
+    
+                        <p>
+                            <strong>Pham Phuoc Sang:</strong>
+                            <u>s3975979@rmit.edu.vn</u>
+                        <ul>
+                            <p>
+                                🡺 Roles: Technical designer, software developer, product manager.
+                            </p>
+    
+                        </ul>
+                        </p>
+    
+                    </ul>
+                </li>
+            </ul>
+    
+        </ul>
+    
+    
+        <ul>
+            <li style="list-style-type: none;">
+                <strong id="Scope_Limits" style="font-size: 22px"><em>4. Scope and Limits</em></strong>
+            </li>
+            <ul>
+                <li style="list-style-type: none">
+                    <strong>a. Scope:</strong>
+                    <p>
+                        The main structure of the scope will be pretty much the same as our proposal except for some
+                        removals of the features that we decided we would not be able to complete:
+                    </p>
+                    <ul>
+                        <p>
+                            -&nbsp&nbsp&nbsp&nbsp Automatic Distance Recognition (ADR): Utilizes sensors to track and
+                            detect the distances between objects and vehicles. The fundamental purpose: maintain safe
+                            distances and ease the risk as well as drastic accidents as well as retrieve and send data to
+                            the cloud system.
+                        </p>
+                        <p>
+                            -&nbsp&nbsp&nbsp&nbsp Vehicle Detection: Detect types of vehicles around the car.
+                        </p>
+                        <p>
+                            -&nbsp&nbsp&nbsp&nbsp Traffic lights signaling: Display the signal on the traffic lights with
+                            the
+                            corresponding timer by receiving the data from the server.
+                        </p>
+                        <p>
+                            -&nbsp&nbsp&nbsp&nbsp Master Controller: monitoring application to view what is happening inside
+                            the application and charts that demonstrate data processed.
+                        </p>
+                        <p>
+                            -&nbsp&nbsp&nbsp&nbsp Machine Learning-based forecasting: Uses machine-learning algorithms in
+                            the cloud server to process real-time traffic data to evaluate and interpret for predictive
+                            maintenance to determine signal timings. Determines indicator timings by using advanced machine
+                            learning algorithms to scrutinize real-time traffic data for predictive maintenance.
+                        </p>
+                        <p>
+                            -&nbsp&nbsp&nbsp&nbsp Real-time reports and API service: publish real-time data as API service
+                            for other vendors or developers. Can be used to help decide the road for a map system or report
+                            the news for drivers to know the current traffic situation.
+                        </p>
+    
+                    </ul>
+                </li>
+    
+                <li style="list-style-type: none">
+                    <strong>b. Limitations:</strong>
+                    <ul>
+                        <p>
+                            <strong> - AI methods: </strong>
+                        <ul>
+                            <li style="list-style-type: none">
+                                ● AI methods (such as neural networks) are often seen as “black boxes” that merely attempt
+                                to map a relationship between output and input variables based on a training data set. Which
+                                was previously alluded to in the article by “Van Zuylen”. This is a significant argument
+                                against several approaches to artificial intelligence. Therefore, immediately prompts
+                                concerns about the instrument's capacity to generalize to situations that were not well
+                                represented in the data set.
+                            </li><br><br>
+                            <li style="list-style-type: none">
+                                ● AI-based search methods, (such as genetic algorithms and ant colony optimization) are
+                                never guaranteed to reach the “optimal” solution. When utilizing AI-based search techniques
+                                to solve an issue, it is frequently difficult to acquire meaningful insight into the nature
+                                of the problem and the solution, as is available when using mathematical programming
+                                approaches, for instance. The inability to conduct sensitivity studies fast is a prime
+                                illustration of this restriction. In order to obtain insight into the issue, it may be
+                                necessary to repeat the model numerous times to examine the sensitivity of the solution to
+                                the different assumptions and parameters of the problem, which may be resource-intensive or
+                                time-consuming.
+                            </li><br><br>
+                            <li style="list-style-type: none">
+                                ● For several AI methods, there is minimal information on how to determine the optimal
+                                values for a method's tuning parameters. Before applying this approach to a particular
+                                issue, every aspect of neural networks, for example, the usage of hidden layers, the number
+                                of neurons to use in the hidden layer, and the kind of trigger functions to use in the
+                                neurons, must be built perfectly. To determine the optimal values for these parameters, a
+                                lengthy trial-and-error method is required.
+                            </li><br><br>
+                        </ul>
+                        </p>
+                        <p>
+                            In the transportation industry, the capacity to predict short- and long-term traffic flow is
+                            crucial. The difficulty is in forecasting in the face of unforeseen occurrences and poor weather
+                            conditions. Unfortunately, current AI approaches are incapable of handling such occurrences and
+                            circumstances. To achieve high precision, it is essential to build weather and
+                            incident-responsive
+                            algorithms and forecast methods. Incorporating AI into the design of these algorithms would
+                            increase
+                            the efficiency of online calculations and the standardization of criteria for geographical and
+                            temporal data coverage. As a restriction, the majority of AI techniques, such as NN (neural
+                            networks) in time series transport applications, seldom involve any testing of the error
+                            characteristics and model design.
+                        </p>
+    
+                    </ul>
+    
+                    <ul>
+                        <p>
+                            <strong> - Computation Complexity in AI Algorithms: </strong>
+                        <ul>
+                            <li style="list-style-type: none">
+                                ● An algorithm is a collection of rules designed to solve a particular issue. Designing and
+                                analyzing algorithms is an essential component of AI technology. It must be efficient in
+                                terms of the amount of time necessary to process a large quantity of input data.
+                                Additionally, the effectiveness of an algorithm will be determined by its memory use. Big O
+                                notation is the most well-known approach to assessing an algorithm. In an ideal environment,
+                                the number of operations remains constant as the volume of data rises. However, this cannot
+                                be accomplished in real-time. In a scenario with a basic algorithm, the quantity of input
+                                data and operations rises at a constant pace. In complex algorithmic situations, the number
+                                of operations and calculations is expressed in terms of polynomial time (X2), exponential
+                                time (2X), and factorial time (X!) [1]. In transportation, data may be acquired from a
+                                variety of sources, including sensors on the road, connected devices, toll gantries, GPS,
+                                and cloud apps, among others. Therefore, it complicates the calculation required to address
+                                a particular issue.
+                            </li><br><br>
+                            <li style="list-style-type: none">
+                                ● AI-based search methods, (such as genetic algorithms and ant colony optimization) are
+                                never guaranteed to reach the “optimal” solution. When utilizing AI-based search techniques
+                                to solve an issue, it is frequently difficult to acquire meaningful insight into the nature
+                                of the problem and the solution, as is available when using mathematical programming
+                                approaches, for instance. The inability to conduct sensitivity studies fast is a prime
+                                illustration of this restriction. In order to obtain insight into the issue, it may be
+                                necessary to repeat the model numerous times to examine the sensitivity of the solution to
+                                the different assumptions and parameters of the problem, which may be resource-intensive or
+                                time-consuming.
+                            </li><br><br>
+                        </ul>
+                        </p>
+                    </ul>
+                </li>
+            </ul>
+    
+    
+        </ul>
+    
+        <ul>
+            <li style="list-style-type: none;">
+                <strong id="Technologies" style="font-size: 22px"><em>5. Tools and Technologies</em></strong>
+            </li>
+            <ul>
+                <li style="list-style-type: none">
+                    <strong>Hardware:</strong>
+                    <ul>
+                        <p>
+                            <strong>Cloud server:</strong> We can rent a cloud server to act as the primary server for the
+                            purpose of
+                            transmitting and receiving real-time data. Therefore, those data can be calculated and computed
+                            with
+                            practical and associated algorithms. Other subsystems are then able to receive the signals being
+                            transferred from the server in order to carry out the task and arrive at the best possible
+                            decision.
+                        </p>
+    
+                        <p>
+                            <strong>Raspberry pi 3B+:</strong> This is a little computer that functions similarly to a
+                            mainboard in that it is used to receive signals that are sent from the primary server and to
+                            provide the server with real-time data. As a result, the Raspberry Pi is able to carry out the
+                            work in accordance with the signals that are sent from the primary server.
+                        </p>
+                        <p>
+                            <strong>Infrared obstacle avoidance sensor:</strong> When the distance between the vehicle and
+                            the obstacle was measured by the sensor, the data was communicated to the raspberry pi so that
+                            it could be used to modify and maintain a safe distance.
+                        </p>
+                        <p>
+                            <strong>Camera:</strong> Real-time data collection is accomplished by first collecting a picture
+                            and then identifying the features included within it. Consequently, these features should be
+                            supplied to the raspberry pi, and the data should continue to be delivered to the main server
+                            for the purpose of computing and calculating.
+                        </p>
+                    </ul>
+                </li>
+    
+                <li style="list-style-type: none">
+                    <strong>Software:</strong>
+                    <ul>
+                        <p>
+                            <strong>OpenCV:</strong> OpenCV is a machine learning library based on computer vision that
+                            detects the item. This library is used to distinguish between a vehicle, pedestrian, traffic
+                            congestion, traffic incident, and traffic signs.
+                        </p>
+    
+                        <p>
+                            <strong>Pandas: </strong>This is the data manipulation software library. This is used to
+                            generate a flowchart that represents real-time data in order to manage traffic flow. Creating a
+                            flowchart based on real-time data used by administrators to maintain the system. Additionally,
+                            authorities and correspondents may utilize this to gather data for statistics works.
+                        </p>
+                        <p>
+                            <strong>TensorFlow & Keras: </strong>The fundamental algorithms for the system are included
+                            inside these software libraries. Both of these APIs are high-level, allowing for rapid model
+                            development and training.
+                        </p>
+                        <p>
+                            <strong>NumPy: </strong>We used NumPy to quickly process images and arrays using matrices and
+                            arrays. Increasing their computational speed.
+                        </p>
+                        <p>
+                            <strong>Python: </strong>This language is used because of its effectiveness, adaptability, and
+                            compatibility with machine learning and artificial intelligence. Additionally, Python is
+                            compatible with several operating systems, including Linux, macOS, Windows, and Ubuntu.
+                        </p>
+                    </ul>
+                </li>
+                <li style="list-style-type: none">
+                    <strong>Algorithms:</strong>
+                    <ul>
+                        <p>
+                            <strong>CNN:</strong> This convolution-based Neural Network method is used to recognize objects
+                            inside images. Which can recognize traffic signs and road layouts in addition to detecting
+                            automobiles. Calculations are performed to extract features from a picture. This may contain
+                            convolution, pooling, rectified linear units, and layers with complete connectivity. Which may
+                            improve the effectiveness of categorizing items and making the right decisions.
+                        </p>
+    
+                        <p>
+                            <strong>KNN: </strong> As a nonparametric regression approach, we use K-nearest neighbor. It has
+                            been shown to be an accurate strategy for predicting short-term traffic flow. To identify the
+                            dataset's closest neighbours and cluster them. The value of k should neither be too little nor
+                            too large since this results in inconsistent output. When a new item is received, its Euclidean
+                            distance is calculated and it is placed in the cluster with the smallest Euclidean distance.
+                            Then, the similarity between real-time data and sample data is evaluated.
+                        </p>
+    
+                        <p>
+                            <strong>ANN:</strong> The artificial neural network (ANN) technique is used to recognize the
+                            non-linear connection between input and output characteristics and to propose generalized
+                            solutions for traffic volume forecasting. At each epoch, the error is estimated by comparing the
+                            computed output of each input to the predicted output. Backpropagation is the most common error
+                            propagation method. A random weight is first allocated to each processing unit. In the training,
+                            cross-validation, and testing stages, the primary aim of the neural network optimization
+                            procedure is to decrease the mean square error. We evaluate the efficacy of the ANN model for
+                            short-term traffic prediction under mixed traffic scenarios.
+                        </p>
+                    </ul>
+                    <p>
+                        - Although the members of this group have some familiarity with the libraries and algorithms
+                        relevant to the area of AI, they have not delved too deeply into the subject matter. Thanks to this
+                        research, every one of us will have the opportunity to not only get a fundamental understanding of
+                        the role that AI plays in the management of traffic but also to have an insight into the algorithms
+                        themselves.
+                    </p>
+                </li>
+            </ul>
+        </ul>
+        <ul>
+            <li style="list-style-type: none;">
+                <strong id="Testing" style="font-size: 22px"><em>6. Testing</em></strong>
+            </li>
+            <ul>
+                <li style="list-style-type: none;">
+                    <p>
+                        Based on the scope of our project, we will divide the testing into 3 phases.
+                    </p>
+                    <p>
+                        The first one will be conducted along with the development of the software functions. We will test
+                        the machine learning algorithms for analyzing and predicting traffic flows with a collection of
+                        sample data that we are planning to collect to see if they give us correct results in an efficient
+                        amount of time. Due to busy traffic in Ho Chi Minh City, and the expectation that the system will
+                        report real-time results, we hope these algorithms can work out the conclusion in under 2 seconds.
+                    </p>
+                    <p>
+                        The second phase will be put into action when we finish the algorithms. In this phase, we will test
+                        if the hardware components we choose work well and are able to communicate through the private
+                        network and send data to the cloud server. We need data on how fast the connection is, how the
+                        weather condition will affect the results given by the components, and what is the minimum
+                        requirements of the cloud server to be able to process the data in the given amount of time.
+                    </p>
+                    <p>
+                        Lastly, we will test the system on the streets. This phase will be the hardest. We will need
+                        permission from the local government and residents to be able to collect camera data at
+                        intersections. Moreover, we will have to rent cars and assemble the needed components, drive them
+                        through the city’s streets to collect real-time data, then analyze the data to have the system
+                        modified if needed before putting it to work. At this phase, we will need volunteers to test the UI
+                        of the command program. We aimed to create a UI that required minimal training to use it. Therefore,
+                        we can invite non-trained users such as friends, families, or students because they are most likely
+                        to be found. We will let them use the beta version of the command system and give them a survey to
+                        evaluate it based on their experience.
+                    </p>
+                </li>
+            </ul>
+        </ul>
+    
+        <ul>
+            <li style="list-style-type: none;">
+                <strong id="Risks" style="font-size: 22px"><em>7. Risks</em></strong>
+            </li>
+            <ul>
+                <li style="list-style-type: none;">
+                    <p>
+                        <strong>
+                            Human resources shortage
+                        </strong>
+                    </p>
+                    <ul>
+                        <p>
+                            During the development of the project, some members of the group might have unexpected problems
+                            and must temporarily or permanently withdraw from the project. This will affect the pace of our
+                            group. We will have to cover their works, which contain the knowledge and skills we do not
+                            possess.
+                        </p>
+                    </ul>
+                </li>
+                <li style="list-style-type: none;">
+                    <p>
+                        <strong>
+                            Schedule risks
+                        </strong>
+                    </p>
+                    <ul>
+                        <p>
+                            Although we have planned to spend 3 weeks on tool learning, it is possible that it will take
+                            longer than expected. Delays may force us to extend the schedule or cut down on lower-priority
+                            functions to meet the deadline of the presentation date.
+                        </p>
+                    </ul>
+                </li>
+                <li style="list-style-type: none;">
+                    <p>
+                        <strong>
+                            Network down
+                        </strong>
+                    </p>
+                    <ul>
+                        <p>
+                            We need a common network for the sub-systems of the project to communicate to calculate and
+                            predict the situations from different perspectives. A backup connection method may be required
+                            for such circumstances.
+                        </p>
+                    </ul>
+                </li>
+                <li style="list-style-type: none;">
+                    <p>
+                        <strong>
+                            Cyber security
+                        </strong>
+                    </p>
+                    <ul>
+                        <p>
+                            Presently, cyber security is a vital consideration that has a significant effect on the
+                            modern-day technologies on which society depends. Given that systems such as AI-based traffic
+                            management are mainly concerned with regulating road traffic and are vulnerable to cyberattacks,
+                            which are capable of inflicting major harm. Thus, cyber security is a crucial component of tech
+                            operations.
+                        </p>
+                        <p>
+                            Due to the vulnerability of computer-based technologies such as GPS, websites, smartphone
+                            applications, or interconnected systems with multiple chances of being hacked, road traffic
+                            management systems can be effortlessly manipulated by hackers, which might interrupt traffic
+                            flow or cause drastic accidents.
+                        </p>
+                        <p>
+                            Researchers have intentionally hacked into cars since 2015 as part of experiments to highlight
+                            the presence of vulnerabilities in the systems of the high-tech automobile. Soon, this can be
+                            capitalized on to fulfil hackers’ illegal purposes.
+                        </p>
+                    </ul>
+                </li>
+                <li style="list-style-type: none;">
+                    <p>
+                        <strong>
+                            Ethical issues
+                        </strong>
+                    </p>
+                    <ul>
+                        <p>
+                            As a matter of fact, the fully autonomous automobile has not yet evolved, and the limitations of
+                            AI sensor technologies are unavoidable. Therefore, when it comes to ethical concerns, there is
+                            no possibility for such vehicle tracking systems to become a reality one day. To accurately
+                            address this situation, it is essential to perceive the philosophical concept called “the
+                            trolley problem/dilemma”.
+                        </p>
+                        <p>
+                            The research showed most of the people who were asked, tended to turn the trolley, and prevent
+                            five deaths at the cost of one. This led to the scientists’ confusion, as they found it
+                            difficult to comprehend what makes it right to put the priority of five people’s lives over one.
+                            For humans, this kind of thinking takes thousands of years to develop and become our reasoning
+                            style. Neuroscientists are continually finding new truths about the human brain and its logical
+                            processes. Teaching the computer what is ethically right or wrong or transmitting the notion of
+                            emotional thinking is determined to be impossible to accomplish.
+    
+                        </p>
+                        <p>
+                            Computers do not have emotions, human brains, or the ability to express instinctive emotional
+                            responses based on righteous judgment or intuition – this purely human characteristic must be
+                            taught to the machine via coding and programming, a task reserved for science fiction.
+                        </p>
+                    </ul>
+                </li>
+                <li style="list-style-type: none;">
+                    <p>
+                        <strong>
+                            Unstable lighting conditions
+                        </strong>
+                    </p>
+                    <ul>
+                        <p>
+                            One of the crucial issues to address during system development is unstable lighting conditions.
+                            One of the prominent features that help traffic signs be distinctive is their unique colours,
+                            which differentiate them from background information and facilitate identification. However, in
+                            outdoor conditions, illumination changes have a significant impact on the colour of traffic
+                            signs. Therefore, detecting traffic signs would be complex under those circumstances.
+                        </p>
+                    </ul>
+                </li>
+                <li style="list-style-type: none;">
+                    <p>
+                        <strong>
+                            Visibility
+                        </strong>
+                    </p>
+                    <ul>
+                        <p>
+                            The light produced by arriving cars' headlights, shadows, the fading and blurring of traffic
+                            signs affected by illumination through rain or snow, and other weather-related factors may all
+                            contribute to poor visibility. Identifying traffic signs in such instances is a difficult
+                            process, and a sensor may miss these signals. As a result, the mentioned factors may increase
+                            the possibility of AI making false detections and diminish the system's efficacy.
+                        </p>
+                    </ul>
+                </li>
+                <li style="list-style-type: none;">
+                    <p>
+                        <strong>
+                            Numerous occurrences of the sign
+                        </strong>
+                    </p>
+                    <ul>
+                        <p>
+                            Multiple traffic signs emerging at the same time and similar form human-made components may
+                            induce overlapping of signs and lead to a false detection when detecting traffic signs,
+                            particularly in metropolitan areas where signs are more densely packed. Rotation, translation,
+                            scaling, and partial occlusion may all have an impact on the detecting process.
+                        </p>
+                    </ul>
+                </li>
+            </ul>
+        </ul>
+        <ul>
+            <li style="list-style-type: none;">
+                <strong id="Communication" style="font-size: 22px"><em>8. Group processes and
+                        communications</em></strong>
+            </li>
+            <ul>
+                <li style="list-style-type: none;">
+                    <p>
+                        <strong>
+                            Meeting progress
+                        </strong>
+                    </p>
+                    <ul>
+                        <p>
+                            We met twice per week (we found that twice a week was the optimal number of times to meet in a
+                            week), and every meeting lasted between 30-60 minutes. Even while we were working independently,
+                            we used team chat to communicate about our work. The project component and the workload were
+                            split and distributed to each team member as evenly as could be, and we regularly checked on
+                            each other’s progress and shared feedback.
+                        </p>
+                    </ul>
+                </li>
+                <li style="list-style-type: none;">
+                    <p>
+                        <strong>
+                            Communication methods
+                        </strong>
+                    </p>
+                    <ul>
+                        <p>
+                            We always preferred in-person meetings over online meetings, which were often held at cafes or
+                            on campus. An in-person meeting allows for greater focus during meetings, prevents digressing,
+                            and allows the team members to get to know each other better. We believe that we could have more
+                            and better ideas to work with if we knew and understood each other better.
+                        </p>
+                        <p>
+                            In some circumstances where we were forced to have the meeting online, we used Discord, because
+                            of its useful functions such as screen and file sharing, and higher call quality, and because it
+                            is the program that allows the closest experience to an in person meeting.
+                        </p>
+                        <p>
+                            Outside of meetings, we used Facebook Messenger for short communications and such. We chose to
+                            use Messenger because it is a communication medium that we all already use.
+                        </p>
+                    </ul>
+                </li>
+                <li style="list-style-type: none;">
+                    <p>
+                        <strong>
+                            Problem and solution
+                        </strong>
+                    </p>
+                    <ul>
+                        <p>
+                            At one point, a group member was completely unresponsive, and one team member attempted to
+                            contact him and found out that, for whatever reason, he’d quit the group without notifying us.
+                            So, the three of us had another meeting and re-distributed our workloads to cover for the member
+                            that quit.
+                        </p>
+                    </ul>
+                </li>
+            </ul>
+        </ul>
+        <h3 id="Skills">
+            <strong class="section-headers">D.</strong>
+            <strong class="section-headers">Skills and Jobs</strong>
+        </h3>
+        <p>
+            <strong>Technical skills:</strong>
+        </p>
+        <ul>
+            <p>
+                - Python Programming: Needed as most of the programming will be done in Python.
+            </p>
+            <p>
+                - Mobile and Web Development/Application skills: Needed to create the UI/UX Component.
+            </p>
+            <p>
+                - Knowledge in:
+            <ul>
+                <p>
+                    - Database (SQL): To form a data set to feed the AI/ML System.
+                </p>
+                <p>
+                    - Machine Learning & Image Processing Tools (NumPy, Keras, TensorFlow): Analytical functions will be
+                    made
+                    with these tools.
+                </p>
+            </ul>
+    
+    
+            </p>
+        </ul>
+    
+        <p>
+            <strong>Soft Skills:</strong>
+        </p>
+        <ul>
+            <p>
+                - Project Management: Includes leadership, documentation, time and quality management, meeting requirements
+                model, task management, conflict resolving
+            </p>
+            <p>
+                - Needed to assure the quality and timely delivery of the project.
+            </p>
+            <p>
+                - Team skills: Communication between project members, supporting each other, team spirit, etc.
+            </p>
+            <p>
+                - Needed to minimize conflict and maximize collaboration and individual input to the project to be as
+                efficient as we can be with our efforts.
+            </p>
+        </ul>
+    
+        <h3 id="Prototype">
+            <strong class="section-headers">E.</strong>
+            <strong class="section-headers">Project outcomes / Prototype</strong>
+        </h3>
+        <p>We’ve made a simple system design diagram to demonstrate what functions it may have and how the parts work
+            together:</p>
+        <figure>
+            <div>
+                <img src="architech.png" alt="software architecture" width="100%">
+                <figcaption style="text-align: center">Fig.1 - System design.</figcaption>
+            </div>
+        </figure>
+        <ul>
+            <p>- The cloud server we hired to run all the machine learning algorithms and data processing algorithms.</p>
+            <p>- The subsystem in a car: A raspberry Pi will collect the data from a camera attached to the car (to
+                recognize nearby vehicles), speed, and other objects (using IR sensors), then send those data to the server.
+                Then receive the response and display it on the screen or by voice.</p>
+            <p>- Traffic light controller: collect real-time video on the road, send it to server, receive the processed
+                video and the signal for the traffic light.</p>
+            <p>- And finally, the master control system, can be used to monitor all the cameras’ status and locations of
+                those cameras. It can also display the traffic situation predicted by the server in the form of charts.</p>
+        </ul>
+        <p>
+            Below is the prototype of the UI design for the master controller. The other 2 subsystems will only work in the
+            backend so there is no UI design for them.
+        </p>
+    
+        <figure>
+            <div>
+                <img src="Control_home.png" alt="control system home screen" width="100%">
+                <figcaption style="text-align: center"></figcaption>
+            </div>
+        </figure>
+    
+    <p>
+        Firstly, it will display small windows for monitoring the cameras.
+    </p>
+    
+    <figure>
+        <div>
+            <img src="Camera_list_view.png" alt="control system list view" width="100%">
+            <figcaption style="text-align: center"></figcaption>
+        </div>
+    </figure>
+    <p>
+        If users cannot find the road, they can turn on the list as below. It will show them each camera location. They
+        can also search the cameras on the road they want to find.
+    </p>
+    <figure>
+        <div>
+            <img src="Control_Detail.png" alt="control system zoom in" width="100%">
+            <figcaption style="text-align: center"></figcaption>
+        </div>
+    </figure>
+    <p>
+        They can click into 1 window, the system will zoom in on that window. They can click on the screen again to go
+        back.
+    </p>
+    <figure>
+        <div>
+            <img src="Chart_view.png" alt="control system zoom in" width="100%">
+            <figcaption style="text-align: center"></figcaption>
+        </div>
+    </figure>
+    <p>
+        Finally, they can view the charts that I mentioned.
+    </p><br>
+    <p>
+        We believe with the carefully calculated data, we will be able to control the traffic lights, distance, and
+        speed of vehicles, and with the monitor system. It may help people from pushing each other on the road, reduce
+        traffic jams, and help drivers to make better driving decisions. With all the real-time information, the
+        residents can know which road is crowded at the moment and choose to take other roads.
+    </p>
+    <p>
+        The system now lacks the ADAS (Advanced Driver Assistance Systems). We want to have this to apply autonomous
+        driving, but the knowledge and budgets do not allow us to do this. So in the future, when we learn more about AI
+        training and get some funding from other investors, we hope to add this feature to bring the original idea back
+        to this project.
+    </p>
+    
+    <h3 id="Reflection">
+        <strong class="section-headers">F.</strong>
+        <strong class="section-headers"> Group Reflection</strong>
+    </h3>
+    <span><strong>Hyeonseok Kang (s3963294)</strong></span>
+    <ul>
+        <p>
+            While we were already in the middle of working on the project, we had an unexpected turn of events, as one
+            of our group members quit without notifying us. However, we didn’t let this interfere with our progress, and
+            quickly adjusted to this change by re-distributing each member’s workload and rearranging the tasks. Besides
+            the one member that quit, we believe our collaboration and teamwork skills were some of the things that went
+            as well as they could have gone.
+        </p>
+        <p>
+            One thing we had a challenge with was that we set the goals too high. At first, we had overestimated our
+            capabilities and planned on creating functions in our project that we realize now were impossible to create
+            with our current skills and knowledge. Naturally, we had to make some compromises and give up on some of the
+            functionalities that were not feasible. We learned that the next time we go on about a project, we should
+            first see if we are capable of actually making the product on our own.
+        </p>
+        <p>
+            During our project, we were surprised to learn that AI technology was much more advanced than we thought. We
+            were amazed to see that AI was already performing so many of the tasks that could only be done by humans and
+            the sheer hold AI already had on society.
+        </p>
+        <p>
+            Initially, the project seemed impossible to do, but we learned that with effort and teamwork, even the most
+            difficult of tasks were possible. Another thing we learned was the importance of collaboration. After
+            finishing the project, we could see that we couldn’t have pulled this project off on our own, and working as
+            a team made things a lot easier.
+        </p>
+    </ul>
+    
+    
+    <span><strong>Pham Phuoc Sang (s3975979)</strong></span>
+    <ul>
+        <p>
+            During our project's development, an unanticipated circumstance led one of our team members to abandon this
+            course without alerting us until I inquired about it. Nonetheless, this unexpected occurrence cannot allow
+            us to halt our development. Again, we reprocessed and redistributed each member's task. I anticipated this
+            catastrophe might significantly impede our development and throw everything into disarray. However, thanks
+            to our collaboration and effort on this project, we can maintain the expected rate of advancement.
+        </p>
+        <p>
+            I was unprepared for the fact that we set our group project's objective at a level that made it impossible
+            to produce the desired end and prototype. Initially, I believed that we would be able to provide a result
+            for this, but the needs of the project were out of control, making it almost impossible with just three
+            people remaining. The function, algorithms, and infrastructure requirements are beyond the group’s
+            capability. To learn from experience, I will establish a target based on the group skills for the next
+            assignment.
+        </p>
+        <p>
+            Everything has two sides; despite the high goal, I discovered a lot of things that I did not know. This
+            understanding and the powers of AI astound me. AI was a highly sophisticated technology that could do a
+            variety of jobs requiring human thinking.
+        </p>
+        <p>
+            In conclusion, the project results and prototype seem unachievable, but I have learned that collaboration
+            and effort may make things easier than working alone.
+        </p>
+    </ul>
+    
+    <span><strong>Vuong Viet Dung (s3878281)</strong></span>
+    <ul>
+        <p>
+            I can say that the group works together smoothly. The tasks were divided well and the deadline we set for
+            each other was appropriate. Moreover, the team members are all responsible that always finishing their work
+            before the deadline with excellent quality. They also were helpful to each other. Not only they checked
+            others’ parts, but also did they offer help even if other people did not ask for any.
+        </p>
+        <p>
+            However, I believe there is always space for improvement. For example, we could have drawn the software
+            architecture first to really visualize hose the system will be constructed, so that we can see if there are
+            any holes in the scope we made. In addition to that, I think my presentation skills need to be improved
+            because presenting projects to investors is such an important part of this career.
+        </p>
+        <p>
+            Working on this project really gave me wonderful knowledge. For example, I didn’t know we have to plan this
+            much before starting a project. Moreover, after we thought the plan was excellent, many problems can come up
+            and we will have to change many things such as the scope, timetable, etc. I was also surprised that being a
+            developer, I may also need to know a bit about designing and how to operate some basic image editing
+            software to make prototypes and demos for the system.
+        </p>
+        <p>
+            I had the chance to work with excellent people, knowing their backgrounds, personalities, and especially
+            their career plan and interest. Knowing this may also help me in my learning and career path. Knowing their
+            interest, they and I may find some common and attend courses together, help each other in the future, and
+            know more about the jobs others are pursuing.
+        </p>
+    </ul>
+    
+    <h3 id="References">
+        <strong class="section-headers">G.</strong>
+        <strong class="section-headers"> References</strong>
+    </h3>
+    <p>[1] R. Abduljabbar, H. Dia, S. Liyanage, and S. A. Bagloee, “Applications of Artificial Intelligence in
+        Transport: An Overview,” Sustainability, vol. 11, no. 1, p. 189, Jan. 2019, doi: 10.3390/su11010189.</p>
+    </div>
+    
+    
+    <button onclick="scrollToTop()" id="myButton" title="scroll top"><img src="arrow.png" alt="arrow"
+            style="max-width: 20px;"></button>
 </body>
-
+<script src="index.js"></script>
 </html>
